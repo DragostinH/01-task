@@ -1,7 +1,7 @@
 <template>
     <div>
       <Header />
-        <div>
+        <div class="flex justify-center">
       <NuxtPage></NuxtPage>
         </div>
       <Footer />
