@@ -7,9 +7,14 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow:{
+        "xl": '0 15px 15px rgba(255, 255,255 0.5)'
+      }
+    },
     colors:{
-      container: "#444"
+      container: "#444",
+      postShadow : "#",
     },
     fontFamily:{
       sans:["Quicksand", "Source Sans Pro","BlinkMacSystemFont",

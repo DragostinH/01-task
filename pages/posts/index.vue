@@ -6,24 +6,34 @@ onMounted(async () => {
   const data = await res.json();
   posts.value = data;
 });
-
 </script>
 
 
 <template>
   <div class="container">
-    <h1>Posts page</h1>
     <!-- <button>Get posts</button> -->
-    <p><nuxt-link class="text-[#3edada]" to="/">Home page</nuxt-link></p>
-    <div class="posts-container grid gap-8 grid-cols-3">
+    <div class="posts-container p-[2rem] grid gap-4 grid-cols-2">
       <div
-        class="post border-[1px] border-[#00eeff] shadow-sm rounded-md"
+        class="
+          post
+          hover:shadow-[#00eeff]
+          text-elipsis
+          p-2
+          border-[1px] border-[#00eeff]
+          shadow-sm
+          rounded-md
+        "
         v-for="post in posts"
         :key="post.id"
       >
         <nuxt-link :to="/posts/ + post.id">
-          <p>{{ post.userId }} {{ post.title }}</p>
-          <p>{{ post.body }}</p>
+          <p class="absolute">
+            {{ post.userId }}
+          </p>
+          <div class="p-4 top-post-container flex border-b-[1px]">
+            <p class="capitalize">{{ post.title }}</p>
+          </div>
+          <p class="p-4">{{ post.body }}</p>
         </nuxt-link>
       </div>
     </div>

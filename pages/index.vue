@@ -1,7 +1,6 @@
 <template>
-  <div class="container p-[60px] w-screen h-screen bg-container">
-    <h1 class="font-bold">Welcome</h1>
-    <p><nuxt-link class=" text-[#3edada]" to="/posts">Posts Page</nuxt-link></p>
+  <div class="container p-[60px] h-screen min-w-full bg-container">
+    <h1 class="font-bold text-center">Welcome to the Home Page</h1>
   </div>
 </template>
 

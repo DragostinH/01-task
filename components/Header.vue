@@ -1,5 +1,42 @@
 <template>
-  <div class="bg-[#000]">
-    <p>This is the header</p>
+  <div
+    class="
+      bg-[#000]
+      p-[1.5rem]
+      flex
+      items-center
+      justify-center
+      gap-8
+      border-b-2 border-[#3edada]
+    "
+  >
+    <p>
+      <nuxt-link
+        class="
+          text-[#3edada]
+          opacity-80
+          hover:opacity-100
+          transition
+          duration-300
+          ease-out
+        "
+        to="/"
+        >Home</nuxt-link
+      >
+    </p>
+    <p>
+      <nuxt-link
+        class="
+          text-[#3edada]
+          opacity-80
+          hover:opacity-100
+          transition
+          duration-300
+          ease-out
+        "
+        to="/posts"
+        >Posts</nuxt-link
+      >
+    </p>
   </div>
 </template>

@@ -14,11 +14,10 @@ onMounted(async () => {
 
 
 <template>
-  <div class="post-id-container">
-    <NuxtLink to="/posts/">
-      <button class="text-[#3edada] p-[6rem]">Back to posts</button>
-    </NuxtLink>
-    <div class="post">
+  <div class="post-id-container h-[100vh]">
+    <div class="post flex flex-col">
+      <p>{{ post.id }}</p>
+      <p>{{ post.title }}</p>
       <p>{{ post.body }}</p>
     </div>
   </div>
